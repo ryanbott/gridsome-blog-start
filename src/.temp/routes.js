@@ -2,15 +2,15 @@ import NotFound from "gridsome/app/pages/404.vue"
 
 export const routes = [
   {
-    name: "contact",
-    path: "/contact",
-    component: () => import(/* webpackChunkName: "component--contact" */ "~/pages/Contact.vue")
-  },
-  {
     name: "home",
     path: "/",
     component: () => import(/* webpackChunkName: "component--home" */ "~/pages/Index.vue"),
     meta: { data: true }
+  },
+  {
+    name: "contact",
+    path: "/contact",
+    component: () => import(/* webpackChunkName: "component--contact" */ "~/pages/Contact.vue")
   },
   {
     name: "about",
