@@ -4,7 +4,7 @@
       <nav>
       <g-link class="heading-link" :to="{ name: 'home' }">
       <g-link class="nav__link" :to="{ name: 'about' }">About</g-link>
-
+      <g-link class="nav__link" :to="{ name: 'contact' }">Contact Me</g-link>
         <component :is="titleTag" class="heading">{{ config.siteName }}</component>
       </g-link>
       </nav>
@@ -60,8 +60,12 @@ export default {
   }
 
   .heading-link {
-    color: black;
+    color: blue;
     text-decoration: none;
+  }
+
+  .nav__link {
+    margin: 0 1rem;
   }
 
   .layout {

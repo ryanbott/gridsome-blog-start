@@ -4,9 +4,9 @@
       <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
         <router-link :to="node.path">
           <h2 v-html="node.title"/>
+          <span v-html="node.date"/>
+          <div v-html="node.fields.description"/>
         </router-link>
-        <span v-html="node.date"/>
-        <div v-html="node.fields.description"/>
       </li>
     </ul>
   </Layout>
